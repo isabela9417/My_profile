@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- social icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!--swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  </head>
+   <body> 
+      <!-- Header Design -->
+  <header class="header">
+        <a href="#" class="logo">Isabela's <span class="headingSpan">Portfolio.</span></a>
+
+        <nav class="navBar">
+          <a href="#home"class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+         
+        </nav>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+  <!---------------------------- Home Section --------------------------->
+  <section class="home" id="home">
+        <div class="home-content">
+          <h3>Hello, I am</h3>
+          <h1>Isabela Tlhakudi</h1>
+          <p>I am a new software developer, fresh from books and computer lab.
+          I'm looking for opportunities that can start up my career in terms of experience and growth. 
+          On the right, there's a wheel with fields that I could do for starters, and the wheel is below if you are using a mobile device.</p>
+            <div class="socials">
+                <a href="https://www.facebook.com/isabela.tlhakudi"><i class="bx bxl-facebook"></i></a>
+                <a href="https://twitter.com/shortgun94"><i class="bx bxl-twitter"></i></a>
+                <a href="https://instagram.com/bellahshotz?igshid=NGExMmI2YTkyZg=="><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/isabela-tlhakudi-78282814b"><i class="bx bxl-linkedin"></i></a>
+            </div>
+              <a href="CURRICULUM_VITAE_OF_ISABELA_TLHAKUDI.docx" class="btn">Download Resume</a>
+        </div>
+        <div class="profession-container">
+          <div class="profession-box">
+              <div class="profession">
+                <i class="bx bx-code-alt" style="--i:0;"></i>
+                <h3>Software Developer</h3>
+              </div>
+              <div class="profession"style="--i:1;">
+                <i class="bx bx-git-repo-forked"></i>
+                <h3>Business Analysis &<br> Modelling</h3>
+              </div>
+              <div class="profession" style="--i:2;">
+                <i class="bx bx-mobile"></i>
+                <h3>Mobile Developer</h3>
+              </div> 
+              <div class="profession" style="--i:3;">
+                <i class="bx bx-check-double"></i>
+                <h3>Software Tester</h3>
+              </div> 
+                  <div class="circle"></div>
+          </div>
+              <div class="overlay"></div>
+        </div>
+      <div class="home-image">
+          <img src="images/profile.png " alt="My Picture">
+      </div>         
+  </section>
+
+      <!--About Section Design-->
+
+      <section class="about" id="about">
+        <div class="about-image">
+          <img src="images/profile3.png" alt="my Second image">
+        </div>
+        <div class="about-content">
+          <h2 class="heading">About <span class="headingSpan"> Me</span></h2>
+          <h3>Hi, I might be the new recruit you need in your team.</h3>
+          <p class="paragraph">I am new to the industry, and I am currently looking for an internship or WIL of atleast six months for me to graduate. 
+            You hiring me might be a start I am looking for<span class="dots">...</span><span class="content"> might not have real work experrience but I believe in what I can do and this project is exactly that. 
+            I am ready to learn and grow while working with others in different projects. I am creative and innovative, I put my best effort in what I do, to see that I finish it. 
+            I love challenging myself, as it sets me of my limits.</span></p>
+
+            <button class="btn" onclick="readMoreButton()">Read More</button>
+        </div>
+      </section>
+
+      <!--Services Section Design-->
+      <section class="services" id="services">
+        <h2 class="heading">My <span class="headingSpan">Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box"> 
+              <i class="bx bx-code-alt"></i>
+              <h3>Web Development</h3>
+
+              <p class="paragraph">I design and create websites, online profiles, pages at a beginner level ofcourse.Thus far I utttilized HTML, CSS and Javascript to create this website which is very responsive
+              <span id="dots">...</span><span id="content"> Also this profile is how I practised and learned to do what I can do. I didn't lie when I said, I have the urge to learn and grow as a Developer, 
+              and I still want to learn more. You have a reason to hire me.</span></p>
+              
+              <button class="btn" onclick="readMoreButton()">Read More</button>
+            </div>
+            <div class="services-box">
+              <i class="bx bx-git-repo-forked"></i>
+              <h3>Business Analysis & modelling</h3>
+
+              <p class="paragraph">I also have knowledge in business analysis and 
+                modelling which involves analysing problematic encounters of a customer for 
+                their existing business system and<span id="dots">...</span><span id="content"> providing possible solutions by also 
+                modelling the given problem by making sure that the customer's needs are met, 
+                at a less costly solution as possible.</span></p>
+
+                <button class="btn" onclick="readMoreButton()">Read More</button>
+            </div>
+            <div class="services-box">
+              <i class="bx bx-check-double"></i>
+              <h3>Software Testing</h3>
+ 
+              <p class="paragraph">I also test softwares in terms of error handling(logic and system response) also provide recommmendations 
+                on the software as to where to improve and also suggestions on how<span id="dots">...</span><span id="content"> to better the 
+                software for all users by delivering a user friendly software as possible.
+                This includes fixing those bugs. A happy client grows the business, therefore hire me for your client and I will gladly help.</span></p>
+
+                <button class="btn" onclick="readMoreButton()">Read More</button>
+
+            </div>
+        </div>
+      </section>
+ 
+      <!-- Portfolio section -->
+      <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span class="headingSpan">Project</span></h2>
+            <h4>Skills I come with:</h4>
+            
+          <div class="portfolio-container">
+              <div class="portfolio-box">
+                <img class="img1" src="images/html.png" alt="html">
+                <div class="portfolio-layer">
+                  <h4>Intermediate level of HTML.</h4>
+                </div>
+              </div>
+              <div class="portfolio-box">
+                <img class="img1" src="images/css.png" alt="css">
+                <div class="portfolio-layer">
+                  <h4>Intermediate level of CSS.</h4>
+                </div>
+              </div>
+                <div class="portfolio-box">
+                  <img class="img1" src="images/javascript.png" alt="javascript">
+                  <div class="portfolio-layer">
+                    <h4>Intermediate level of Javasript.</h4>
+                  </div>
+                </div>
+                  <div class="portfolio-box">
+                    <img class="img1" src="images/back-end.png" alt="c++">
+                    <div class="portfolio-layer">
+                      <h4>I know programming languages such as c++, and C# and a bit of Java.</h4>
+                    </div>
+                  </div>
+                    <div class="portfolio-box">
+                      <img class="img1" src="images/php.png" alt="web design">
+                      <div class="portfolio-layer">
+                        <h4>Junior level of PHP.</h4>
+                      </div>
+                    </div>
+                    <div class="portfolio-box">
+                      <img class="img1" src="images/sql.png" alt="database">
+                      <div class="portfolio-layer">
+                         <h4>Intermediate level in database design and implimentation.</h4>    
+                      </div>
+                    </div>
+           </div>
+           <a href="#home" class="btn">Demo</a>
+      </section>
+
+      <!--testimonials Design-->
+      <div class="testimonial-container">
+          <h2 class="heading">Valuable <span class="headingSpan">Testimonial</span></h2>
+          
+        <div class="testimonial-wrapper">
+          <div class="testimonial-box mySwiper">
+            <div class="testimonial-content swiper-wrapper">
+              <div class="testimonial-slide swiper-slide">
+                <img src="images/testimonial1.jpg" alt="">
+                  <h3>Hope Digamela</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="testimonial-slide swiper-slide">
+                <img src="images/testimonial2.jpg" alt="">
+                  <h3>Thabisile Ntuli</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nam luctus velit ultrices ultrices aliquet. 
+                    Fusce non augue sodales risus pulvinar gravida. 
+                    Nulla lobortis auctor ante, in aliquet eros tempus. 
+                    Aliquam erat neque, semper ut dui non, porttitor faucibus enim. 
+                    Duis eget eros quis arcu ornare cursus nec vitae est. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div><div class="testimonial-slide swiper-slide">
+                <img src="images/testimonial3.jpg" alt="">
+                  <h3>Enica Koano</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nam luctus velit ultrices ultrices aliquet. 
+                    Fusce non augue sodales risus pulvinar gravida. 
+                    Nulla lobortis auctor ante, in aliquet eros tempus. 
+                    Aliquam erat neque, semper ut dui non, porttitor faucibus enim. 
+                    Duis eget eros quis arcu ornare cursus nec vitae est.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+          </div>
+        </div>  
+      </div>
+
+      <!-- contact section design -->
+      <section class="contact" id="contact">
+          <h2 class="heading">Contact <span class="headingSpan">Me!</span></h2>
+
+          <form action="php/contactform.php" method="POST">
+            <div class="input-box">
+              <input type="text" name="fullName" placeholder="Full Name">
+              <input type="email" name="emailAddress" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+              <input type="number" name="mobileNumber" placeholder="Mobile Number">
+              <input type="text" name="emailSubject" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message Here"></textarea>
+            <input type="submit" name="submit" value="Send Message" class="btn">
+          </form>
+      </section>
+
+      <!-- footer section design -->
+      <footer class="footer">
+        <div class="footer-text">
+          <p>Copyright &copy; 2023 by Isabela | All rights Reserved</p>
+        </div>
+        <div class="footer-contactIcon">
+          <a href="#"><i class="bx bx-mobile-alt"></i>0632390038</a>
+          <a href="#"><i class="bx bx-envelope"></i>isabela.tlhakudi@gmail.com</a>
+        </div>
+        <div class="footer-iconTop">
+          <a href="#home"><i class="bx bxs-up-arrow-square"></i></a>
+        </div>
+      </footer>
+      <!-- scroll reveal Javascript --> 
+      <script src="https://unpkg.com/scrollreveal"></script>
+       <!-- swiper Javascript --> 
+       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <!-- Javascript -->
+      <script src="javascript/javascript.js"></script>
+   </body>   
+</html>
+
