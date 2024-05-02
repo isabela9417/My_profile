@@ -1,3 +1,38 @@
+// /*============== Get the contact me page to send email ==============*/
+
+//     /*---------getting data from the form-------------*/
+// const form = document.querySelector("form");
+// const fullName = document.getElementById("fullName");
+// const email = document.getElementById("emailAddress")
+// const mobile = document.getElementById("mobileNumber")
+// const subject = document.getElementById("emailSubject")
+// const mess = document.getElementById("message")
+
+// function sendEmail(){
+//   const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${mobile.value}<br> ${mess.value}`;
+//   Email.send({
+//     Host : "smtp.elasticemail.com",
+//     Username : "isabela.tlhakudi@gmail.com",
+//     Password : "1858EA2A1C20F5CC962DF286050095F0FCEF",
+//     To : 'isabela.tlhakudi@gmail.com',
+//     From : "isabela.tlhakudi@gmail.com",
+//     Subject : subject.value,
+//     Body : bodyMessage
+//   }).then(
+//       message => alert(message)
+//   );
+// }
+
+// form.addEventListener("submit", (e) => { 
+//   e.preventDefault();
+
+//   sendEmail();
+// })
+
+
+
+
+
 /*============== menu icon navbar ==============*/
 
 var menuIcon = document.querySelector("#menu-icon");

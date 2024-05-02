@@ -134,13 +134,13 @@
       <!-- Portfolio section -->
       <section class="portfolio" id="portfolio">
             <h2 class="heading">Latest <span class="headingSpan">Project</span></h2>
-            <h4>Skills I come with:</h4>
-            
+            <h4>Technologies I come with:</h4>
+            <br/>
           <div class="portfolio-container">
               <div class="portfolio-box">
                 <img class="img1" src="images/html.png" alt="html">
                 <div class="portfolio-layer">
-                  <h4>Intermediate level of HTML.</h4>
+                    <h4>Intermediate level of HTML.</h4>
                 </div>
               </div>
               <div class="portfolio-box">
@@ -170,34 +170,36 @@
               <div class="portfolio-box">
                 <img class="img1" src="images/sql.png" alt="database">
                 <div class="portfolio-layer">
-                  <h4>Intermediate level in database design and implimentation.</h4>    
+                  <h4>Intermediate level in database design and implimentation. SQL</h4>    
                 </div>
               </div>
               <div class="portfolio-box">
-                <img class="img1" src="images/python.jpg" alt="database">
+                <img class="img1" src="images/python.jpg" alt="python">
                 <div class="portfolio-layer">
-                  <h4>I also wored with python.</h4>    
+                  <h4>Python and also django framework</h4>
                 </div>
               </div>
               <div class="portfolio-box">
-                <a href="https://github.com/shanemashele/shanemashele.git">
-                  <img class="img1" src="images/django.jpeg" alt="database">
-                <div class="portfolio-layer">
-                  <h4>Click here to view my collaborated Django and python.</h4>    
-                </div>
-                </a>
+                <a href="https://github.com/isabela9417/Data.git">
+                  <img class="img1" src="images/data science.jpg" alt="data science">
+                  <div class="portfolio-layer">
+                    <h4>Basic Data Science: machine learning Click to view my Models</h4>
+                  </div>
+                </a>      
               </div>
               <div class="portfolio-box">
-                <a href="https://github.com/isabela9417/Data-Science-machine-learning-projects.git">
-                  <img class="img1" src="images/data-science.jpg" alt="database">
-                <div class="portfolio-layer">
-                  <h4>Click here to view my deep learning Models</h4>    
-                </div>
-                </a>
+                <a href="https://github.com/isabela9417/4IR_groupB_project/tree/master/mysite">
+                  <img class="img1" src="images/django.png" alt="html">
+                  <div class="portfolio-layer">
+                    <h4>Click to view my E-commerce website project</h4>
+                  </div>
+                </a>      
+              </div>
               </div>
            </div>
-           <br/>
-           <a href="#home" class="btn">Demo</a>  <a href="https://github.com/isabela9417/My_profile.git" class="btn">Github</a>
+         </br>
+           <a href="#home" class="btn">Demo</a> <a href="https://github.com/isabela9417/My_profile.git" class="btn">GitHub</a>
+
       </section>
 
       <!--testimonials Design-->
@@ -249,17 +251,16 @@
       <!-- contact section design -->
       <section class="contact" id="contact">
           <h2 class="heading">Contact <span class="headingSpan">Me!</span></h2>
-
-          <form action="php/contactform.php" method="POST">
+          <form action="php/contact.php" method="POST">
             <div class="input-box">
-              <input type="text" name="fullName" placeholder="Full Name">
-              <input type="email" name="emailAddress" placeholder="Email Address">
+              <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+              <input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-              <input type="number" name="mobileNumber" placeholder="Mobile Number">
-              <input type="text" name="emailSubject" placeholder="Email Subject">
+              <input type="number" name="mobileNumber" id ="mobileNumber" placeholder="Mobile Number" required>
+              <input type="text" name="emailSubject" id="emailSubject" placeholder="Email Subject" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message Here"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message Here" required></textarea>
             <input type="submit" name="submit" value="Send Message" class="btn">
           </form>
       </section>
@@ -277,6 +278,8 @@
           <a href="#home"><i class="bx bxs-up-arrow-square"></i></a>
         </div>
       </footer>
+      <!-- from smptjs --> 
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
       <!-- scroll reveal Javascript --> 
       <script src="https://unpkg.com/scrollreveal"></script>
        <!-- swiper Javascript --> 
