@@ -70,7 +70,7 @@ body {
 .navBar a {
     position: relative;
     font-size: 1.7rem;
-    color: var(--white-color);
+    color: var(--main-color);
     font-weight: 500;
     margin-right: 3.5rem;
 }
@@ -134,7 +134,7 @@ section {
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
-    margin-bottom: .3rem;
+    margin-bottom: .3;
 }
 .home-content p {
     margin-bottom: .3rem;
@@ -268,11 +268,11 @@ section {
     border-left: 384px solid transparent;
 }
 
-.home img {
+.home-image img {
     position: absolute;
     right: 0;
-    bottom: -6px;
-    width: 35%;
+    bottom: 9.2rem;
+    width: 34%;
     pointer-events: none;
 }
 .headingSpan {
@@ -369,7 +369,7 @@ section {
     padding-bottom: 10rem;
 }
 .portfolio h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 1.8rem;
 }
 .portfolio .portfolio-container {
     display: grid;
