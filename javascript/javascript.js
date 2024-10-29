@@ -62,6 +62,8 @@ window.onscroll = () => {
     }
   })
 /*======================= sticky navbar ==================*/
+
+  
 var header = document.querySelector(".header");
 header.classList.toggle("sticky", window.scrollY > 100);
 
