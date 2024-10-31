@@ -128,3 +128,47 @@ ScrollReveal().reveal(".home-content,.heading", {origin: "top"});
 ScrollReveal().reveal(".home-image img, .services-container, .portfolio-box, .testimonial-wraper, .contact form", {origin: "bottom"});
 ScrollReveal().reveal(".home-content h1, .about-image img", {origin: "left"});
 ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", {origin: "rightt"});
+
+function sendEmail(){
+    var name = document.getElementById("fullName").value;
+    var email = document.getElementById("emailAddress").value;
+    var number = document.getElementById("mobileNumber").value;
+    var subjectEmail = document.getElementById("emailSubject").value;
+    var mail_message = document.getElementById("message").value;
+
+    var emailContent = "Name: " + name + "<br/>Phone: " + number + "<br/>Email: " + email + "<br/>Message: " + mail_message;
+
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "isabelachana@gmail.com",
+        Password: "285B162ECD2B63B990D2BA4AA15B83A68F9B",
+        To: 'isabela.tlhakudi@gmail.com',
+        From: "isabelachana@gmail.com",
+        Subject: subjectEmail,
+        Body: emailContent
+    }).then(
+        message => {
+            if (message === 'OK')
+              {swal({ title: "Message Sent Successfully", text: "I will get in touch with you as soon as I can", imageUrl: "images/thumbs-up.jpg" });
+              document.querySelector("form").reset(); 
+}
+
+        }
+    );
+}
+
+// validating the form inputs
+
+
+function validateForm() {
+    const mobileNumber = document.getElementById('mobileNumber').value;
+    
+    // Check if mobile number has 10 digits
+    if (mobileNumber.length !== 10) {
+        alert("Please enter a valid mobile number (10 digits).");
+        return false;
+    }
+    
+    // You can add more validation rules as needed
+    return true; // Allow form submission if all validations pass
+}
