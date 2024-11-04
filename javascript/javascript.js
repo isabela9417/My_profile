@@ -1,38 +1,3 @@
-// /*============== Get the contact me page to send email ==============*/
-
-//     /*---------getting data from the form-------------*/
-// const form = document.querySelector("form");
-// const fullName = document.getElementById("fullName");
-// const email = document.getElementById("emailAddress")
-// const mobile = document.getElementById("mobileNumber")
-// const subject = document.getElementById("emailSubject")
-// const mess = document.getElementById("message")
-
-// function sendEmail(){
-//   const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${mobile.value}<br> ${mess.value}`;
-//   Email.send({
-//     Host : "smtp.elasticemail.com",
-//     Username : "isabela.tlhakudi@gmail.com",
-//     Password : "1858EA2A1C20F5CC962DF286050095F0FCEF",
-//     To : 'isabela.tlhakudi@gmail.com',
-//     From : "isabela.tlhakudi@gmail.com",
-//     Subject : subject.value,
-//     Body : bodyMessage
-//   }).then(
-//       message => alert(message)
-//   );
-// }
-
-// form.addEventListener("submit", (e) => { 
-//   e.preventDefault();
-
-//   sendEmail();
-// })
-
-
-
-
-
 /*============== menu icon navbar ==============*/
 
 var menuIcon = document.querySelector("#menu-icon");
@@ -43,7 +8,7 @@ menuIcon.onclick = () => {
   navBar.classList.toggle("active");
 };
 
-/*====================== scroll active link ==========================*/
+/*====================== scroll section active link ==========================*/
 var sections = document.querySelectorAll("section");
 var navLinks = document.querySelectorAll("header nav a");
 
@@ -74,25 +39,23 @@ header.classList.toggle("sticky", window.scrollY > 100);
 
 /*======================== Hide and show buttons ===================*/
 
-function readMoreButton() {
-    var dots = document.getElementsByClassName("dots");
-    var moreText = document.getElementsByClassName("content");
-    var para = document.getElementsByClassName("paragraph");
-    var btnText = document.getElementsByClassName("btn");
+function readMoreButton(button) {
+    // Find the parent paragraph element
+    const paragraph = button.previousElementSibling;
+    const content = paragraph.querySelector('.content');
+    const dots = paragraph.querySelector('.dots');
 
-    if (dots.style.display === "inline" || 
-        moreText.style.display === "none" ||
-        btnText.innerHTML === "Read More") {
-        
-        moreText.innerHTML = para + moreText;
-        btnText.innerHTML = "Read Less";
-        
+    // Toggle the display of content and dots
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "inline";
+        dots.style.display = "none";      
+        button.textContent = "Read Less"; 
     } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read Less"; 
-        moreText.style.display = "inline";
+        content.style.display = "none";  
+        dots.style.display = "inline";  
+        button.textContent = "Read More";
     }
-  }
+}
 
 /*================== swiper slide ==================*/
 var swiper = new Swiper(".mySwiper", {
