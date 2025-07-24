@@ -18,8 +18,8 @@
     --shadow-color: rgba(0, 0, 0, .2);
 }
 .dark-mode{
-    --bg-color: #0C2D48;
-    --text-color: #bebebe;
+    --bg-color: #0b061f;
+    --text-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .7);
 }
 html{
@@ -277,7 +277,10 @@ section{
 
 .home .profession-container .overlay{
     position: absolute;
-    top: 0; right: 0; width: 0; height: 0;
+    top: 0; 
+    right: 0; 
+    width: 0; 
+    height: 0;
     border-top: 384px solid var(--main-color);
     border-right: 384px solid var(--main-color);
     border-bottom: 384px solid var(--main-color);
@@ -288,7 +291,7 @@ section{
     position: absolute;
     right: 0;
     bottom: -6.2rem;
-    width: 33%;
+    width: 43%;
     pointer-events: none;
 }
 
@@ -405,7 +408,7 @@ section{
 }
 
 .portfolio  h2{
-    margin-bottom: 1.8rem;
+    margin-bottom: 4rem;
 }
 
 .portfolio .portfolio-container{
@@ -416,31 +419,6 @@ section{
     margin-bottom: .6rem;
 }
 
-.projects-table{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-}
-
-.latest-projects, .collaborated{
-    flex: 1;
-    margin: 1.2rem;
-    padding: 1.2rem;
-    border: .1rem solid var(--main-color);
-    border-radius: .2rem;
-    background-color: #f9f9f9;
-    transition: .5s ease;
-}
-
-.latest-projects:hover, .collaborated:hover{
-    box-shadow: 0 .1rem 2rem var(--shadow-color);
-    transform: scale(1.02);
-}
-
-.latest-projects h4, .collaborated h4{
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
 
 .portfolio-container .portfolio-box{
     position: relative;
@@ -483,6 +461,26 @@ section{
 
 .portfolio-layer h4 {
     font-size: 3rem;
+}
+
+.portfolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--white-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 3rem;
+    color: #333;
 }
 
 /* ================================ Testimonials Section ========================== */
@@ -758,9 +756,11 @@ section{
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         display: none;
     }
+
     .navBar.active{
         display: block;
     }
+
     .navBar a{
         display: block;
         font-size: 2rem;
@@ -803,20 +803,26 @@ section{
         width: 100%;
         height: 100%;
     }
-
-    .home .profession-container .profession-box{
+     .home .profession-container .profession-box {
         position: fixed;
         top: 60%;
         left: 0;
         border-radius: 0;
         width: 100%;
     }
+    .home .profession-container .overlay{
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
     
     .home .profession-box .profession{
         padding: 0 13px;
         left: auto;
         transform-origin: 0;
-        
     }
 
     .home .profession-box .profession:nth-child(1){
@@ -839,21 +845,15 @@ section{
         transform: rotate(180deg) translate(-165px, -330px);
     }
 
-    .home .profession-box .circle{
+    
+       .home .profession-box .circle{
         position: fixed;
         width: 670px;
         height: 670px;
         z-index: -1;
     }
-    .home .profession-container .overlay{
-        display: none; 
-        position: fixed; 
-        top: 70rem;
-        width: 50%;
-        right: 0;
-        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
-        border-width: 25rem; 
-    }
+
+    /* ---------about------ */
     .about{
         flex-direction: column-reverse;
         text-align: center;
@@ -863,7 +863,7 @@ section{
     }
     .about-image img{
         width: 50vw;
-        height: 50vw;
+        height: 70vw;
         margin-top: 2rem;
         margin-left: auto;
         margin-right: auto;
